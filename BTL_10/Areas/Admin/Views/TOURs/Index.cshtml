@@ -59,9 +59,9 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        @foreach (var ia in item.DENs)
+                                                        @foreach (var ia in item.DENs.ToList())
                                                         {
-                                                            <li>@ia.DIEMTHAMQUAN.TENDD,</li>
+                                                            <li>@ia.DIEMTHAMQUAN.TENDD</li>
                                                         }
                                                     </div>
                                                     <div class="modal-footer">

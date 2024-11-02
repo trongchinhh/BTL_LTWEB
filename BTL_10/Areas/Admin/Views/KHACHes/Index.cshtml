@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<BTL_10.Models.KHACH>
 
+
+
 @{
     ViewBag.Title = "Index";
 }
@@ -16,6 +18,7 @@
                     <table class="table table-striped table-bordered zero-configuration">
                         <thead>
                             <tr>
+                                <th>Mã Khách</th>
                                 <th>Tên khách hàng</th>
                                 <th>Giới tính</th>
                                 <th>Chứng minh nhân dân</th>
@@ -28,6 +31,7 @@
                             @foreach (var item in Model)
                             {
                                 <tr>
+                                    <td>@item.MAKHACH</td>
                                     <td>@item.TENKHACH</td>
                                     <td>
                                         @if (item.PHAI == true)
@@ -46,6 +50,8 @@
                                     <td>@item.CMND</td>
                                     <td>@item.SDT</td>
                                     <td>@item.DIACHI</td>
+                                    
+
                                     <td>
                                         <a href="/Admin/KHACHes/Details/@item.MAKHACH">
                                             <button class="btn mb-1 btn-rounded btn-outline-dark" data-toggle="tooltip" data-placement="top" title="Xem">
@@ -66,6 +72,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
+                                <th>Mã khách</th>
                                 <th>Tên khách hàng</th>
                                 <th>Giới tính</th>
                                 <th>Chứng minh nhân dân</th>

@@ -4,10 +4,11 @@
       "type": "secrets.user"
     },
     "mssql1": {
+      "serviceConnectorResourceId": "",
       "secretStore": "LocalSecretsFile",
-      "resourceId": null,
-      "type": "mssql.local",
-      "connectionId": "TourStore"
+      "type": "mssql.onprem",
+      "connectionId": "ConnectionStrings:TourStore",
+      "dynamicId": null
     }
   }
 }

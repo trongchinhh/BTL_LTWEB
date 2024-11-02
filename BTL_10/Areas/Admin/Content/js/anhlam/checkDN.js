@@ -315,8 +315,8 @@ function dangky() {
             })
     } else if (pass.value && name.value && hvt.value) {
         toastr.success(
-            "Đang xử lý :3",
-            "Đủ rồi đó", {
+            "Đang Đăng Nhập :3",
+            "Thành Công", {
             timeOut: 5e3,
             closeButton: !0,
             debug: !1,

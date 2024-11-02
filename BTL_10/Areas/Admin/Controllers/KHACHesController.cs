@@ -20,6 +20,7 @@ namespace BTL_10.Areas.Admin.Controllers
         {
             return View(db.KHACHes.ToList());
         }
+         
 
         // GET: Admin/KHACHes/Details/5
         public ActionResult Details(string id)

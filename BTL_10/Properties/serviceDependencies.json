@@ -5,7 +5,8 @@
     },
     "mssql1": {
       "type": "mssql",
-      "connectionId": "TourStore"
+      "connectionId": "ConnectionStrings:TourStore",
+      "dynamicId": null
     }
   }
 }
